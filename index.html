@@ -1,0 +1,564 @@
+<html>
+
+<head>
+    <title>Coursera</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="index.css" type="text/css">
+    <script src="index.js"></script>
+    <style>
+        body{
+            background-color:white;
+            color:black;
+        }
+        .mydark{
+            background-color:black;
+            color:white;
+        }
+        
+    </style>
+   
+    <script>
+        function changeMode(){
+            var mybody = document.body;
+            // if body have class mydark than remove else add
+            mybody.classList.toggle("mydark")
+    
+        }
+    </script>
+
+
+</head>
+
+<body>
+
+    <div class="container" >
+
+        <nav class="navbar navbar-default" >
+
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#edunav">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                    <a class="navbar-brand" href="#" style=" color: white">
+                        Coursera
+                    </a>
+
+                </div>
+
+                <div class="navbar-collapse collapse" id="edunav">
+
+                    <form class="navbar-form navbar-left" role="search">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="What do you want to learn?">
+                        </div>
+                        <button type="submit" class="btn btn-secondary">Search</button>
+                    </form>
+
+                    <div class="btn-group">
+
+                        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Explore <span class="caret"></span>
+                        </button>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Action</a></li>
+                            <li><a href="#">Another action</a></li>
+                            <li><a href="#">Something else here</a></li>
+                            <li role="separator" class="divider"></li>
+                            <li><a href="#">Separated link</a></li>
+                        </ul>
+
+                    </div>
+
+                </div>
+
+                <a href="#" class="head11"> Online degree</a>
+                <a href="#" class="head22"> Free courses</a>
+                <a href="#" style="float: right;   margin-top: -3.3%; margin-right: 25%;  font-size: 20px; color: white;"
+                    class="glyphicon glyphicon-time" aria-hidden="true"></a> 
+
+                    <button class="btn btn-default" style="float: right;  margin-top: -3.8%; margin-left: 90%;">Log In</button>
+                    <button onClick="geolocation()" class="btn btn-default"  style="float: left;  margin-top: -3.8%; margin-left: 86.4%;">Location</button>
+                    <p id="out"></p>
+                    <div id="icon"></div>
+                    <p id="address"></p>
+                    <button class="btn btn-default" style="float: left;  margin-top: -4.7%; margin-left: 80.5%;"onclick="changeMode()">Mode</button>
+
+            </div>
+        </nav>
+
+        
+    <div>
+        <div id="coupon">
+            <button style="margin-left: 95.8%;" onclick="closeDiv()">&times;</button>
+            <div class="cp">
+                <div class="cp1">
+                    <p class="cp-sub">* COURSERA *</p>
+                    <p class="cp-sub2">Don't Miss the Opportunity to Get the 50% off on All the Courses.</p>
+                    <p  class="cp-sub3">-LIMITED TIME OFFER-</p>
+
+                </div>
+                <div class="cp2">
+                    <img src="Homepage/coupon.png" alt="" width="100%">
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        window.onload=test()
+    </script>
+
+
+        <div class="media">
+
+            <div class="media-body">
+
+                <h1 class="media-heading">Learn Without Limits</h1>
+                <p style="font-size: 25px; margin-top: 4%;">
+                    Open your door to more with world-class Professional Certificates and degrees.
+                </p>
+
+
+                <a style="margin-top: 5%;" class="btn btn-primary btn-lg" type="button" href="Home.html"> Join for Free</a>
+                <a style="margin-top: 5%; margin-left: 2%;" class="btn btn-primary btn-lg" type="button" href="#"> Try
+                    Coursera for Buisness</a>
+
+            </div>
+
+            <div class="media-right">
+                <img src="Homepage/Learning 1.png" class="media-object" />
+            </div>
+
+        </div>
+
+        <br>
+        <br>
+       
+
+        <div class="jumbotron" style="background-color: #ebd375;">
+            <h2 style="font-size: 35px; text-align: center;"> We collaborate with 200+ leading universities and
+                companies</h2>
+            <br>
+            <br>
+
+            <div class="row">
+                <div class="col-xs-6 col-md-3">
+                    <a href="https://www.ibm.com/in-en/cloud/aiops?lnk=hpv18f1" class="thumbnail">
+                        <img style="width: 53%;" src="logos/IBM_India-Logo.wine.png" alt="ibm">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="https://www.facebook.com/" class="thumbnail">
+                        <img style="width: 50%;" src="logos/Facebook-Logo.png" alt="ibm">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="https://aws.amazon.com/free/?trk=ps_a134p000003yhlXAAQ&trkCampaign=acq_paid_search_brand&sc_channel=ps&sc_campaign=acquisition_IN&sc_publisher=google&sc_category=core-main&sc_country=IN&sc_geo=APAC&sc_outcome=Acquisition&sc_detail=aws&sc_content=Brand_Core_aws_e&sc_matchtype=e&sc_segment=453325184782&sc_medium=ACQ-P|PS-GO|Brand|Desktop|SU|Core-Main|Core|IN|EN|Text&s_kwcid=AL!4422!3!453325184782!e!!g!!aws&ef_id=Cj0KCQiAjJOQBhCkARIsAEKMtO2dRCGZQPnm6poDGQBy4psKK4Cc6at7AyNqP9vcoTRhgSubFvIkZdQaAtpcEALw_wcB:G:s&s_kwcid=AL!4422!3!453325184782!e!!g!!aws&all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc&awsf.Free%20Tier%20Types=*all&awsf.Free%20Tier%20Categories=*all"
+                        class="thumbnail">
+                        <img style="width: 57%;" src="logos/aws-logo.png" alt="ibm">
+                    </a>
+                </div>
+                <div class="col-xs-6 col-md-3">
+                    <a href="https://www.google.co.in/" class="thumbnail">
+                        <img style="width: 67%;" src="logos/logo-google.png" alt="ibm">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <br>
+        <br>
+
+
+
+        <div>
+            <h3 class="h3-head"> Exlpore Coursera</h3>
+            <br>
+            <br>
+            <div class="header">
+
+                <div class="subhead">
+
+                    <div class="subhead1">
+                        <img src="homepage/physical_science_and_engineering.jpg" alt="" width="100%" height="100px">
+
+
+                    </div>
+
+                    <div class="subhead2">
+                        <p class="subhead2-1">Data Science</p>
+                        <p class="subhead2-2">425 Courses</p>
+
+                    </div>
+
+                </div>
+                <div class="subhead">
+                    <div class="subhead1">
+                        <img src="homepage/business.jpg" alt="" width="100%" height="100px">
+
+
+                    </div>
+                    <div class="subhead2">
+                        <p class="subhead2-1">Buisness</p>
+                        <p class="subhead2-2">1095 Courses</p>
+
+                    </div>
+
+                </div>
+                <div class="subhead">
+                    <div class="subhead1">
+                        <img src="homepage/computer_science.jpg" alt="" width="100%" height="100px">
+
+                    </div>
+                    <div class="subhead2">
+                        <p class="subhead2-1">Computer Science</p>
+                        <p class="subhead2-2">668 Courses</p>
+
+                    </div>
+
+                </div>
+                <div class="subhead">
+                    <div class="subhead1">
+                        <img src="homepage/health.jpg" alt="" width="100%" height="100px">
+
+                    </div>
+                    <div class="subhead2">
+                        <p class="subhead2-1">Health</p>
+                        <p class="subhead2-2">471 Courses</p>
+
+                    </div>
+
+                </div>
+                <div class="subhead">
+                    <div class="subhead1">
+                        <img src="homepage/social_sciences.jpg" alt="" width="100%" height="100px">
+
+                    </div>
+                    <div class="subhead2">
+                        <p class="subhead2-1">Social Science</p>
+                        <p class="subhead2-2">401 Courses</p>
+
+                    </div>
+
+                </div>
+                <div class="subhead">
+                    <div class="subhead1">
+                        <img src="homepage/personal_development.jpg" alt="" width="100%" height="100px">
+
+                    </div>
+                    <div class="subhead2">
+                        <p class="subhead2-1">Personal development</p>
+                        <p class="subhead2-2">137 Courses</p>
+
+                    </div>
+
+                </div>
+                <div class="subhead">
+                    <div class="subhead1">
+                        <img src="homepage/math_and_logic.jpg" alt="" width="100%" height="100px">
+
+                    </div>
+                    <div class="subhead2">
+                        <p class="subhead2-1">Maths and Logic</p>
+                        <p class="subhead2-2"> 70 Courses</p>
+
+                    </div>
+
+                </div>
+                <div class="subhead">
+                    <div class="subhead1">
+                        <img src="homepage/information_technology.jpg" alt="" width="100%" height="100px">
+
+                    </div>
+                    <div class="subhead2">
+                        <p class="subhead2-1">Information Technology</p>
+                        <p class="subhead2-2">145 Courses</p>
+
+                    </div>
+
+                </div>
+                <div class="subhead">
+                    <div class="subhead1">
+                        <img src="homepage/arts_and_humanities.jpg" alt="" width="100%" height="100px">
+
+                    </div>
+                    <div class="subhead2">
+                        <p class="subhead2-1">Arts and Humanity</p>
+                        <p class="subhead2-2">338 Courses</p>
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div class="media">
+
+            <div class="media-body2">
+
+                <div class="media-right">
+                    <img src="Homepage/ThreeImages-Marketing.png" class="media-object" />
+                </div>
+
+                <div class="media-body">
+                    <h1 class="media-heading2">World-class learning for you</h1>
+                    <p class="three">
+                        Pursue a promotion, a raise, or switch careers. 89% of learners who have taken a course report
+                        career benefits.
+                    </p>
+                    <p class="three2"> - Coursera Learner Outcome Survey, India (2021)</p>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+        <div>
+            <p class="head1">From the Coursera </p>
+            <p class="head2">community </p>
+            <p class="head3">87+ million people are already learning on Coursera </p>
+        </div>
+
+        <br>
+
+        <div class="mid" style="margin-top: 4%;">
+            <div class="mid1">
+                <p class="mid-12">Coursera for Business</p>
+                <p class="mid-123">Get world-class training and development programs developed by top universities and
+                    companies. All on
+                    Coursera for Business.</p>
+                <button type="button" class="btn btn-primary" style="margin-left: 34%; margin-top: 2%;">Coursera for
+                    Enterprise</button>
+
+            </div>
+            <div class="mid2">
+
+                <p class="mid-22">Thousands of institutions use Coursera’s enterprise offering.</p>
+
+                <div class="row" style="margin-left: 17%; margin-top: 4%;">
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://www.mindtree.com/" class="thumbnail">
+                            <img src="Homepage/logo-mindtree-color.png" alt="ibm">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://www.mahindra.com/" class="thumbnail">
+                            <img src="Homepage/logo-mahindra-color.png" alt="ibm">
+                        </a>
+                    </div>
+                    <div class="col-xs-6 col-md-3">
+                        <a href="https://www.ril.com/" class="thumbnail">
+                            <img src="Homepage/logo-reliance-industries-color.png" alt="ibm">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <br>
+
+        <div class="media">
+
+
+            <div class="media-right">
+                <img style="margin-top: 12%;" src="homepage/Image-Next-Step.png" alt="">
+            </div>
+
+            <div class="media-body">
+                <p class="media-heading3">Take the next step toward your personal and professional goals with
+                    Coursera.</p>
+                <p class="three2">Join now to receive personalized recommendations from the full Coursera catalog.</p>
+                <button type="button" class="btn btn-primary" style="margin-left: 14%; margin-top: 2%;">Join For
+                    Free</button>
+            </div>
+
+        </div>
+        <hr/>
+
+
+
+        <div class="end" style="margin-top: 8%;">
+
+            <div class="end1">
+                <p class="end11">Start your career</p>
+                <p class="111">Google Data Analyst</p>
+                <p class="111">Google Project Management</p>
+                <p class="111">Google UX Design</p>
+                <p class="111">IBM Data Science</p>
+                <p class="111">IBM Data Analyst</p>
+                <p class="111">IBM Data Analytics with Excel and R</p>
+                <p class="111">IBM Cybersecurity Analyst</p>
+                <p class="111">IBM Data Engineering</p>
+                <p class="111">IBM Full Stack Cloud Developer</p>
+                <p class="111">Facebook Social Media Marketing</p>
+                <p class="111">Facebook Marketing Analytics</p>
+                <p class="111">Salesforce Sales Development Representative</p>
+                <p class="111">Salesforce Sales Operations</p>
+                <p class="111">Intuit Bookkeeping</p>
+                <p class="111">Preparing for Google Cloud Certification: Cloud Architect</p>
+                <p class="111">Preparing for Google Cloud Certification: Cloud Data Engineer</p>
+                <p class="111">Launch your career</p>
+
+
+                <p class="end12" style=" margin-top: 30%;">Coursera</p>
+                <p class="end111">About</p>
+                <p class="end111">What We Offer</p>
+                <p class="end111">Leadership </p>
+                <p class="end111">Careers</p>
+                <p class="end111">Catalog</p>
+                <p class="end111">Coursera Plus</p>
+                <p class="end111">Professional Certificates</p>
+                <p class="end111">MasterTrack® Certificates</p>
+                <p class="end111">Degrees</p>
+                <p class="end111">For Enterprise</p>
+                <p class="end111">For Government</p>
+                <p class="end111">Coronavirus Response</p>
+
+
+
+
+            </div>
+            <div class="end2">
+                <p class="end11">Browse popular topics</p>
+                <p class="222">Free Courses</p>
+                <p class="222">Learn a Language</p>
+                <p class="222">Python</p>
+                <p class="222">Java</p>
+                <p class="222">Web Design</p>
+                <p class="222">SQL</p>
+                <p class="222">Cursos Gratis</p>
+                <p class="222">Microsoft Excel</p>
+                <p class="222">Project Management</p>
+                <p class="222">Cybersecurity</p>
+                <p class="222">Human Resources</p>
+                <p class="222">Data Science Free Courses</p>
+                <p class="222">Speaking English</p>
+                <p class="222">Content Writing</p>
+                <p class="222">Full Stack Web Development</p>
+                <p class="222">Artificial Intelligence</p>
+                <p class="222">C Programming</p>
+                <p class="222">Communication Skills</p>
+                <p class="222">Blockchain</p>
+
+                <p class="end12" style=" margin-top: 30%;">Community</p>
+                <p class="end222">Learners</p>
+                <p class="end222">Partners</p>
+                <p class="end222">Developers</p>
+                <p class="end222">Beta Testers</p>
+                <p class="end222">Translators</p>
+                <p class="end222">Blog/p>
+                <p class="end222">Tech Blog</p>
+                <p class="end222">Teaching Center</p>
+
+
+
+            </div>
+            <div class="end3">
+                <p class="end11">Popular courses and articles</p>
+                <p class="333">Software Engineering Skills</p>
+                <p class="333">Soft Skills for Engineering Teams</p>
+                <p class="333">Management Skills</p>
+                <p class="333">Marketing Skills</p>
+                <p class="333">Skills for Sales Teams</p>
+                <p class="333">Product Manager Skills</p>
+                <p class="333">Skills for Finance</p>
+                <p class="333">Popular Data Science Courses in the UK</p>
+                <p class="333">Beliebte Technologiekurse in Deutschland</p>
+                <p class="333">Popular Cybersecurity Certifications</p>
+                <p class="333">Popular IT Certifications</p>
+                <p class="333">Popular SQL Certifications</p>
+                <p class="333">Marketing Manager Career Guide</p>
+                <p class="333">Project Manager Career Guide</p>
+                <p class="333">Python Programming Skills</p>
+                <p class="333">Web Developer Career Guide</p>
+                <p class="333">Data Analyst Skills</p>
+                <p class="333">Skills for UX Designers</p>
+                <p class="333">More</p>
+
+                <p class="end12" style=" margin-top: 30%;">More</p>
+                <p class="end333">Press</p>
+                <p class="end333">Investors</p>
+                <p class="end333">Terms</p>
+                <p class="end333">Privacy</p>
+                <p class="end333">Help</p>
+                <p class="end333">Accessibility</p>
+                <p class="end333">Contact</p>
+                <p class="end333">Articles</p>
+                <p class="end333">Directory</p>
+                <p class="end333">Affiliates</p>
+
+
+
+
+            </div>
+            <div class="end4">
+                <p class="end11">Earn a degree or certificate online</p>
+                <p class="end444">MasterTrack® Certificates</p>
+                <p class="end444">Professional Certificates</p>
+                <p class="end444">University Certificates</p>
+                <p class="end444">MBA & Business Degrees</p>
+                <p class="end444">Data Science Degrees</p>
+                <p class="end444">Computer Science Degrees</p>
+                <p class="end444">Computer Science Degrees</p>
+                <p class="end444">Public Health Degrees</p>
+                <p class="end444">Social Sciences Degrees</p>
+                <p class="end444">Management Degrees</p>
+                <p class="end444">Degrees from Top European Universities</p>
+                <p class="end444">Master's Degrees</p>
+                <p class="end444">Bachelor's Degrees</p>
+                <p class="end444">Degrees with a Performance Pathway</p>
+                <p class="end444">Bsc Courses</p>
+                <p class="end444">What is a Bachelor's Degree?</p>
+                <p class="end444">How Long Does a Master's Degree Take?</p>
+                <p class="end444">See all certificates</p>
+
+                <img src="Homepage/en_generic_rgb_wo_45.png" alt=" play store logo"
+                    style="width: 60%; margin-left: 18%; margin-top: 28%;">
+                <img src="Homepage/apple.png" alt=" apple logo" style="width: 60%; margin-left: 18%; margin-top: 10%;">
+                <img src="homepage/verified.png" alt="copyright"
+                    style="width: 60%; margin-left: 18%; margin-top: 10%;">>
+
+
+            </div>
+
+        </div>
+        <div class="foot">
+
+            <p class="foot1" style="margin-top: 4.5%; font-weight: bold; font-size: 20px;">© 2022 Coursera Inc. All
+                rights reserved.</p>
+            <a style="float: right; margin-top: -4%;  margin-right: 4%;" href="#" class="fa fa-facebook"></a>
+            <a style="float: right; margin-top: -4%; margin-right: 8%;" href="#" class="fa fa-twitter"></a>
+            <a style="float: right; margin-top: -4%; margin-right: 12%;" href="#" class="fa fa-instagram"></a>
+            <a style="float: right; margin-top: -4%; margin-right: 16%;" href="#" class="fa fa-youtube"></a>
+            <a style="float: right; margin-top: -4%; margin-right: 20%;" href="#" class="fa fa-linkedin"></a>
+
+        </div>
+
+
+
+
+
+    </div>
+
+</body>
+
+</html>
